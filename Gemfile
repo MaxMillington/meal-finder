@@ -21,6 +21,10 @@ gem 'figaro'
 
 gem 'bcrypt', '~> 3.1.7'
 
+gem 'gmaps4rails'
+gem 'underscore-rails'
+gem 'geocoder'
+
 group :development, :test do
   gem 'pry'
   gem 'capybara'
