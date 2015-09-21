@@ -6,6 +6,7 @@
 
 body {
     margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    font-family: Lato,Helvetica,Arial,sans-serif;
 }
 
 .image-bg-fluid-height,
@@ -62,3 +63,15 @@ footer {
         font-size: 2em;
     }
 }
+
+section {
+    background-color: #ECF0F1;
+    padding-bottom: 175px;
+}
+
+.footer {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color: #ECF0F1;
+}
+
