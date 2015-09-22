@@ -27,38 +27,6 @@
 
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top navbar-embossed" role="navigation">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="<%= root_path %>">MealFinder</a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li>
-          <a href="#">How it Works</a>
-        </li>
-        <li>
-          <a href="#">Services</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-  </div>
-  <!-- /.container -->
-</nav>
-
 <!-- Full Width Image Header with Logo -->
 <!-- Image backgrounds are set within the full-width-pics.css file. -->
 <header class="image-bg-fluid-height">
@@ -78,7 +46,7 @@
         <a href="<%= numbers_new_path %>" class="btn btn-block btn-lg btn-info">Register a Number</a>
       </div>
       <div class="col-sm-4"><br>
-        <a href="#" class="btn btn-block btn-lg btn-info">View Meal Locations</a>
+        <a href="<%= locations_path %>" class="btn btn-block btn-lg btn-info">View Meal Locations</a>
       </div>
       <div class="col-sm-4"><br>
         <a href="#" class="btn btn-block btn-lg btn-info">Add a Location</a>
