@@ -1,6 +1,9 @@
 class LocationsController < ApplicationController
   def index
-    @locations = Location.all
+    def index
+      @locations = Location.all
+      @json = @locations.to_gmaps4rails
+    end
   end
 
   def new

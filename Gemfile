@@ -21,7 +21,7 @@ gem 'figaro'
 
 gem 'bcrypt', '~> 3.1.7'
 
-gem 'gmaps4rails'
+gem 'gmaps4rails', '~> 1.5.6'
 gem 'underscore-rails'
 gem 'geocoder'
 
