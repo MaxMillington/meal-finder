@@ -1,0 +1,28 @@
+<br><br><br><br>
+<div class="container">
+  <h1 class="text-center">Register a New Location</h1>
+
+
+  <div class="well col-sm-6 col-sm-offset-3">
+    <%= form_for @location, url: locations_path do |f| %>
+        <div class="form-group">
+          <%= f.label :name, "Name" %>
+          <%= f.text_field :name, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :address, "Address" %>
+          <%= f.text_field :address, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :email %>
+          <%= f.text_field :email, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :phone_number, "Phone Number" %>
+          <%= f.text_field :phone_number, class: "form-control" %>
+        </div>
+        <%= f.submit "Create Location", class: "btn btn-success" %>
+    <% end %>
+  </div>
+
+</div>

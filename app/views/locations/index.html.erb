@@ -4,11 +4,18 @@
 
 <article><br><br><br><br>
 
-  <h1 id="title">All Trips</h1>
+  <h1 id="title">Locations</h1>
 
   <div>
     <div id="map" class="homepage-map">
-
+      <% @locations.each do |location| %>
+          Name: <%= location.name %><br>
+          Address: <%= location.address %><br>
+          Email: <%= location.email %><br>
+          Phone Number: <%= location.phone_number%><br>
+          Latitude: <%= location.latitude %><br>
+          Longitude: <%= location.longitude %><br>
+      <% end %>
     </div>
   </div>
 
