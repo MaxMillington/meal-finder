@@ -4,6 +4,8 @@ SimpleCov.start
 RSpec.configure do |config|
   require 'capybara/rspec'
 
+  config.include Capybara::DSL
+
   config.expect_with :rspec do |expectations|
 
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true

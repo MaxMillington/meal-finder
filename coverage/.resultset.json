@@ -1,6 +1,45 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/maryrose/module_3_projects/meal_finder/spec/features/user_can_navigate_the_website_spec.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/maryrose/module_3_projects/meal_finder/spec/models/location_spec.rb": [
         1,
         null,
@@ -206,6 +245,8 @@
         1,
         1,
         null,
+        1,
+        1,
         null
       ],
       "/Users/maryrose/module_3_projects/meal_finder/app/helpers/application_helper.rb": [
@@ -213,6 +254,8 @@
         null
       ],
       "/Users/maryrose/module_3_projects/meal_finder/app/models/location.rb": [
+        1,
+        null,
         1,
         null,
         1,
@@ -236,8 +279,61 @@
         1,
         1,
         null
+      ],
+      "/Users/maryrose/module_3_projects/meal_finder/app/controllers/home_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/maryrose/module_3_projects/meal_finder/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/maryrose/module_3_projects/meal_finder/app/controllers/numbers_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        2,
+        null,
+        2,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        2,
+        null,
+        null
       ]
     },
-    "timestamp": 1442973582
+    "timestamp": 1443022233
   }
 }
