@@ -13,7 +13,7 @@ User.create(username: "Max Millington", email: "MaxMillington89@gmail.com", pass
 # Location.create(name: "Project Angel Heart", address: "4950 Washington St. Denver, CO 80216", description: "")
 # Location.create(name: "Samaritan House ", address: "2301 Lawrence St, Denver, CO 80205", description: "")
 
-
+Number.create(phone_number: "570-690-2302")
 
 
 
