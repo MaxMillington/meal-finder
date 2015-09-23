@@ -1,0 +1,59 @@
+<br><br><br>
+
+<body>
+
+
+<header class="header-image">
+  <div class="headline">
+    <div class="container">
+      <h1>Contact Info</h1>
+    </div>
+  </div>
+</header>
+
+<!-- Page Content -->
+<div class="container">
+
+  <hr class="featurette-divider">
+
+  <!-- First Featurette -->
+  <div class="featurette" id="about">
+    <%= image_tag "headshot.jpeg", class: "featurette-image img-circle img-responsive pull-right" %>
+    <h2 class="featurette-heading">
+      <span class="text-muted"></span>
+    </h2>
+    <p class="lead">MealFinder was built by Max Millington.
+      Please contact him with any questions concerning the website.
+    <ul class="list-inline">
+      <li>
+        <a href="mailto:maxmillington89@gmail.com"
+           class="btn-social btn-outline btn-lg"><i class="fa fa-fw fa-envelope"></i></a>
+      </li>
+      <li>
+        <a class="btn-social btn-outline btn-lg" href = "javascript:void(0)"onclick = "document.getElementById('light').style.display='block';document.
+                getElementById('fade').style.display='block'"><i id="popup" class="fa fa-fw fa-phone popup"></i></a>
+        <div id="light" class="white_content">570-690-2302
+          <a href = "javascript:void(0)" onclick = "document.getElementById('light').
+                  style.display='none';document.getElementById('fade').style.display='none'"><br><br>Close</a></div>
+      </li>
+      <li>
+        <a href="https://github.com/MaxMillington/meal-finder" target="_blank"
+           class="btn-social btn-outline btn-lg"><i class="fa fa-fw fa-github"></i></a>
+      </li>
+    </ul>
+
+    </p>
+  </div>
+
+  <hr class="featurette-divider">
+
+</div>
+<!-- /.container -->
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>

@@ -11,6 +11,7 @@ gem 'bootstrap3-rails'
 gem 'bootstrap_form'
 gem 'will_paginate', '~> 3.0.5'
 gem 'bootstrap-will_paginate', '~> 0.0.10'
+gem 'font-awesome-rails'
 
 
 gem 'jquery-rails'
@@ -24,6 +25,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'gmaps4rails', '~> 1.5.6'
 gem 'underscore-rails'
 gem 'geocoder'
+
 
 group :development, :test do
   gem 'pry'
