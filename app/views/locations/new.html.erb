@@ -15,11 +15,11 @@
         </div>
         <div class="form-group">
           <%= f.label :email %>
-          <%= f.text_field :email, class: "form-control" %>
+          <%= f.email_field :email, class: "form-control" %>
         </div>
         <div class="form-group">
           <%= f.label :phone_number, "Phone Number" %>
-          <%= f.text_field :phone_number, class: "form-control" %>
+          <%= f.telephone_field :phone_number, class: "form-control" %>
         </div>
         <%= f.submit "Create Location", class: "btn btn-success" %>
     <% end %>

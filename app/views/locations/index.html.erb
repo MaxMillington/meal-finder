@@ -8,14 +8,17 @@
     <!-- Heading Row -->
     <div class="row">
       <div class="col-md-8">
-        <img class="img-responsive img-rounded" src="http://placehold.it/900x600" alt="">
+        <%= gmaps4rails(@json) %>
       </div>
 
       <!-- /.col-md-8 -->
       <div class="col-md-4">
-        <h1>Business Name or Tagline</h1>
-        <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
-        <a class="btn btn-primary btn-lg" href="#">Call to Action!</a>
+        <h1>Map of Locations</h1>
+        <p>On this page you will find a map of all the locations offering meal assistance in Denver to those in need.
+          The list is divided between those locations that offer food-lines, and those that are food banks. <br><br><br>
+          Do you know of a location offering free meals that isn't listed? Please click the button below.
+        </p>
+        <a class="btn btn-primary btn-lg" href="<%= new_location_path %>">Register a New Location</a>
       </div>
       <!-- /.col-md-4 -->
     </div>
@@ -27,7 +30,7 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="well text-center">
-          This is a well that is a great spot for a business tagline or phone number for easy access!
+          These locations all offer food-line services. Click on the more info button for details.
         </div>
       </div>
       <!-- /.col-lg-12 -->
@@ -36,35 +39,14 @@
 
     <!-- Content Row -->
     <div class="row">
-      <div class="col-md-4">
-        <h2>Heading 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
-        <a class="btn btn-default" href="#">More Info</a>
-      </div>
-      <!-- /.col-md-4 -->
-      <div class="col-md-4">
-        <h2>Heading 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
-        <a class="btn btn-default" href="#">More Info</a>
-      </div>
-      <!-- /.col-md-4 -->
-      <div class="col-md-4">
-        <h2>Heading 3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
-        <a class="btn btn-default" href="#">More Info</a>
-      </div>
-      <!-- /.col-md-4 -->
+      <% @locations.each do |location| %>
+          <div class="col-md-4">
+            <h2><%= location.name %></h2>
+            <p><%= location.address %></p>
+            <a class="btn btn-default" href="<%= location_path(location) %>">More Info</a>
+          </div>
+      <% end %>
     </div>
-    <!-- /.row -->
-
-    <!-- Footer -->
-    <footer>
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright &copy; Your Website 2014</p>
-        </div>
-      </div>
-    </footer>
 
   </div>
   <!-- /.container -->
@@ -76,29 +58,6 @@
   <script src="js/bootstrap.min.js"></script>
 
   </body>
-
-
-
-  <h1 id="title">Locations</h1>
-
-  <div style='width: 900px;'>
-    <div id="map`" style='width: 900px; height: 600px;'>
-      <%= gmaps4rails(@json) %>
-    </div>
-  </div>
-
-
-
-  <div>
-    <% @locations.each do |location| %>
-        Name: <%= location.name %><br>
-        Address: <%= location.address %><br>
-        Email: <%= location.email %><br>
-        Phone Number: <%= location.phone_number%><br>
-        Latitude: <%= location.latitude %><br>
-        Longitude: <%= location.longitude %><br><br>
-    <% end %>
-  </div>
 
 
 
