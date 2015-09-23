@@ -1,0 +1,44 @@
+
+
+<article><br><br><br><br>
+  <body>
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Heading Row -->
+    <div class="row">
+      <div class="col-md-8">
+        <%= gmaps4rails(@json) %>
+      </div>
+
+      <!-- /.col-md-8 -->
+      <div id="location-description" class="col-md-4 well">
+        <h1><%= @location.name %></h1>
+        <p><%= @location.description %>
+        </p><br><br>
+        <h3>Contact</h3>
+        <p><%= @location.address %></p>
+        <p><%= @location.phone_number %></p>
+
+      </div>
+      <!-- /.col-md-4 -->
+    </div>
+    <!-- /.row -->
+
+    <hr>
+    <!-- Content Row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  </body>
+
+
+
+</article>

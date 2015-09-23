@@ -104,3 +104,8 @@ section {
     border-radius: 5px 5px 5px 5px;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
+#location-description {
+    height: 505px;
+    margin-bottom: 40px;
+}

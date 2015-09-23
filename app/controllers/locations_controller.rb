@@ -14,6 +14,11 @@ class LocationsController < ApplicationController
     @location = Location.new
   end
 
+  def show
+    @location = Location.find(params[:id])
+    @json = @location.to_gmaps4rails
+  end
+
   def create
     @location = Location.new(location_params)
 
@@ -26,9 +31,18 @@ class LocationsController < ApplicationController
     end
   end
 
+  private
 
   def location_params
     params.require(:location)
         .permit(:name, :address, :latitude, :longitude, :description, :email, :phone_number)
   end
+
+  # def build_google_markers(data)
+  #   @hash = Gmaps4rails.build_markers(data) do |location, marker|
+  #     marker.lat location.latitude
+  #     marker.lng location.longitude
+  #     marker.infowindow "<a id='map-links' href='#{location_url(location)}'>#{location.name}</a>"
+  #   end
+  # end
 end
