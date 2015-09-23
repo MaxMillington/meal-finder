@@ -17,7 +17,7 @@ class NumbersController < ApplicationController
   end
 
   def index
-    
+
   end
 
   private
