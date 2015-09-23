@@ -1,16 +1,16 @@
 
 <div class="well col-sm-6 col-sm-offset-3">
-  <form>
-    <div class="form-group">
-      <label for="inputEmail">Phone Number</label>
-      <input type="email" class="form-control" id="inputEmail" placeholder="Phone Number">
-    </div>
-    <div class="form-group">
-      <label for="inputEmail">Email (optional)</label>
-      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-    </div>
-    <button type="submit" class="btn btn-primary">Register</button>
-  </form>
+  <%= form_for @number, url: numbers_path do |f| %>
+      <div class="form-group">
+        <%= f.label :phone_number, "Phone_number" %>
+        <%= f.telephone_field :phone_number, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :email, "Email(optional)" %>
+        <%= f.email_field :email, class: "form-control" %>
+      </div>
+      <%= f.submit "Register", class: "btn btn-success" %>
+  <% end %>
   <br><br>
   MealFinder will not share your information with any third parties.
 </div>
