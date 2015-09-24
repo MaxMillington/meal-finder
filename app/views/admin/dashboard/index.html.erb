@@ -34,7 +34,7 @@
             </td>
             <td><%= number.phone_number %></td>
             <td><%= number.email %></td>
-            <td><%#= link_to "Delete", #, method: :delete %></td>
+            <td><%= link_to "Delete", number_path(number), method: :delete %></td>
           </tr>
       <% end %>
       </tbody>
@@ -45,5 +45,5 @@
 <br>
 <br>
 <div style="text-align: center">
-  <a class="btn btn-primary btn-lg" href="#">Twilio Test Button</a>
+  <%= link_to "Twilio Test Button", notifications_notify_path, method: :post, class: "btn btn-primary btn-lg" %>
 </div>

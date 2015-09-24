@@ -20,6 +20,12 @@ class NumbersController < ApplicationController
 
   end
 
+  def destroy
+    @number = Number.find(params[:id])
+    @number.delete
+    redirect_to admin_dashboard_path
+  end
+
   private
 
   def number_params

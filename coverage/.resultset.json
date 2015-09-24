@@ -247,6 +247,14 @@
         null,
         1,
         1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
         null
       ],
       "/Users/maryrose/module_3_projects/meal_finder/app/helpers/application_helper.rb": [
@@ -280,6 +288,21 @@
         1,
         null
       ],
+      "/Users/maryrose/module_3_projects/meal_finder/spec/models/user_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/maryrose/module_3_projects/meal_finder/app/models/user.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
       "/Users/maryrose/module_3_projects/meal_finder/app/controllers/home_controller.rb": [
         1,
         1,
@@ -300,6 +323,12 @@
         null,
         null,
         1,
+        null,
+        1,
+        6,
+        null,
+        1,
+        null,
         null
       ],
       "/Users/maryrose/module_3_projects/meal_finder/app/controllers/numbers_controller.rb": [
@@ -334,6 +363,6 @@
         null
       ]
     },
-    "timestamp": 1443022233
+    "timestamp": 1443128484
   }
 }

@@ -12,6 +12,6 @@ Rails.application.routes.draw do
   resources :locations
   resources :numbers
 
-  post "twilio/connect_customer" => "twilio#connect_customer"
+  # post "twilio/connect_customer" => "twilio#connect_customer"
   post 'notifications/notify' => 'notifications#notify'
 end
