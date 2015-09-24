@@ -11,5 +11,4 @@ class NotificationsController < ApplicationController
     render plain: message.status
   end
 
-
 end
