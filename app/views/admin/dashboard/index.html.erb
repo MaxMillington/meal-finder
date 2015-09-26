@@ -23,7 +23,7 @@
       <tr>
         <th>ID</th>
         <th>Phone Number</th>
-        <th>Email</th>
+        <th></th>
       </tr>
       </thead>
       <tbody>
@@ -33,8 +33,40 @@
               <%= number.id %>
             </td>
             <td><%= number.phone_number %></td>
-            <td><%= number.email %></td>
             <td><%= link_to "Delete", number_path(number), method: :delete %></td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+
+  </div>
+
+  <hr class="featurette-divider"><br>
+  <ol class="breadcrumb">
+    <li class="active">All Registered Locations</li>
+  </ol>
+
+  <h3 class="text-center">All Registered Locations</h3>
+
+  <div class="table-responsive">
+    <table class="table table-hover">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th></th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @locations.each do |location| %>
+          <tr>
+            <td><%= location.id %></td>
+            <td><%= location.name %></td>
+            <td><%= location.address %></td>
+            <td><%= link_to "Edit", edit_location_path(location) %></td>
+            <td><%= link_to "Delete", location_path(location), method: :delete %></td>
           </tr>
       <% end %>
       </tbody>
