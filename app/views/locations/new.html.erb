@@ -2,8 +2,9 @@
 <div class="container">
   <h1 class="text-center">Register a New Location</h1>
 
-
   <div class="well col-sm-6 col-sm-offset-3">
+    <p>Please enter the times during which meals are served each day. If meals are not served on a certain day,
+      please leave that day blank.</p>
     <%= form_for @location, url: locations_path do |f| %>
         <div class="form-group">
           <%= f.label :name, "Name" %>
@@ -20,6 +21,34 @@
         <div class="form-group">
           <%= f.label :phone_number, "Phone Number" %>
           <%= f.telephone_field :phone_number, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :monday, "Monday" %>
+          <%= f.text_field :monday, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :tuesday, "Tuesday" %>
+          <%= f.text_field :tuesday, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :wednesday, "Wednesday" %>
+          <%= f.text_field :wednesday, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :thursday, "Thursday" %>
+          <%= f.text_field :thursday, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :friday, "Friday" %>
+          <%= f.text_field :friday, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :saturday, "Saturday" %>
+          <%= f.text_field :saturday, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :sunday, "Sunday" %>
+          <%= f.text_field :sunday, class: "form-control" %>
         </div>
         <div class="form-group">
           <%= f.label :description %>
