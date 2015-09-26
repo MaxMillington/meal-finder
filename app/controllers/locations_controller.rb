@@ -54,6 +54,7 @@ class LocationsController < ApplicationController
                           phone_number: params[:location][:phone_number],
                           email:  params[:location][:email],
                           description: params[:location][:description])
+        redirect_to admin_dashboard_path
         flash[:notice] = "Profile updated!"
       else
         flash[:error] = "Invalid input - Please try updating trip again"

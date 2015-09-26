@@ -4,7 +4,7 @@
 
 
   <div class="well col-sm-6 col-sm-offset-3">
-    <%= form_for @location, url: locations_path do |f| %>
+    <%= form_for @location, url: location_path(@location) do |f| %>
         <div class="form-group">
           <%= f.label :name, "Name" %>
           <%= f.text_field :name, class: "form-control" %>
