@@ -21,24 +21,78 @@ Number.create(phone_number: "570-690-2302")
 #food-lines
 
 Location.create(name: "Christ Body Ministries", address: "850 Lincoln Street Denver, CO 80203",
-description: "Hot meals between 12:30–3 pm Monday, 10 am–3 pm Tuesday through Thursday, 8:30 am–12 pm on Friday. Grocery bags at 16th & York on Saturday starting at 2pm")
+                monday: "Hot meals between 12:30-3pm.",
+                tuesday: "10 am-3pm", wednesday: "10 am-3pm",
+                thursday: "10 am-3pm", friday: "8:30-12pm",
+                saturday: "Grocery bags at 16th & York on Saturday starting at 2pm")
+
 Location.create(name: "Holy Ghost Church", address: "1900 California Street Denver, CO",
-description: "Provides sandwiches between 10–10:30 am Monday through Saturday")
+                monday: "Provides sandwiches between 10-10:30 am",
+                tuesday: "Provides sandwiches between 10-10:30 am",
+                wednesday: "Provides sandwiches between 10-10:30 am",
+                thursday: "Provides sandwiches between 10-10:30 am",
+                friday: "Provides sandwiches between 10-10:30 am",
+                saturday: "Provides sandwiches between 10-10:30 am")
+
 Location.create(name: "Volunteers of America", address: "2877 Lawrence Street Denver, CO",
-description: "Breakfast at 8 am Monday through Thursday. Lunch between 11:30 am through 12 pm Monday through Thursday. Lunch 12 pm on Sunday. Dinner between 5-5:30 pm Monday through Thursday.")
+                monday: "Breakfast 8am. Lunch 11:30-12pm. Dinner 5-5:30pm.",
+                tuesday: "Breakfast 8am. Lunch 11:30-12pm. Dinner 5-5:30pm.",
+                wednesday: "Breakfast 8am. Lunch 11:30-12pm. Dinner 5-5:30pm.",
+                thursday: "Breakfast 8am. Lunch 11:30-12pm. Dinner 5-5:30pm.",
+                sunday: "Lunch 12 pm.")
+
 Location.create(name: "Saint Elizabeth’s Church", address: "1060 St Francis Way, Denver, CO 80204",
-description: "Provides soup and sandwiches everyday from 11–11:30 am.")
+                monday: "Soup and sandwiches 11–11:30 am.",
+                tuesday: "Soup and sandwiches 11–11:30 am.",
+                wednesday: "Soup and sandwiches 11–11:30 am.",
+                thursday: "Soup and sandwiches 11–11:30 am.",
+                friday: "Soup and sandwiches 11–11:30 am.",
+                saturday: "Soup and sandwiches 11–11:30 am.",
+                sunday: "Soup and sandwiches 11–11:30 am.",)
+
 Location.create(name: "Grant Avenue Street Reach ", address: "1600 Grant Street, Denver, CO 80205",
-description: "Provides coffee and pastries mid-morning and lunch between 1–5 pm.")
+                monday: "Provides coffee and pastries mid-morning and lunch between 1–5 pm.",
+                tuesday: "Provides coffee and pastries mid-morning and lunch between 1–5 pm.",
+                wednesday: "Provides coffee and pastries mid-morning and lunch between 1–5 pm.",
+                thursday: "Provides coffee and pastries mid-morning and lunch between 1–5 pm.",
+                friday: "Provides coffee and pastries mid-morning and lunch between 1–5 pm.",
+                saturday: "Provides coffee and pastries mid-morning and lunch between 1–5 pm.",
+                sunday: "Provides coffee and pastries mid-morning and lunch between 1–5 pm.")
+
 Location.create(name: "Catholic Worker Soup Kitchen", address: "2323 Curtis Street Denver, CO",
-description: "Provides lunch between 3 pm and 4 pm Wednesday through Friday. (Except not on the 3rd Wednesday of the month)")
+                wednesday: "Lunch between 3 pm and 4 pm",
+                thursday: "Lunch between 3 pm and 4 pm",
+                friday: "Lunch between 3 pm and 4 pm")
+
 Location.create(name: "Trinity United Methodist Church", address: "1820 Broadway, Denver, CO",
-description: "Provides lunch between 11:45 am and 12:15 pm Wednesday through Friday.")
+                wednesday: "Lunch between 11:45 am and 12:15 pm",
+                thursday: "Lunch between 11:45 am and 12:15 pm",
+                friday: "Lunch between 11:45 am and 12:15 pm")
+
 Location.create(name: "Senior Support Services", address: "846 East 18th Ave, Denver, CO",
-description: "Provides 11:15 am lunch and 6 pm meal for seniors 55 and older.")
+                monday: "Provides 11:15 am lunch and 6 pm meal for seniors 55 and older.",
+                tuesday: "Provides 11:15 am lunch and 6 pm meal for seniors 55 and older.",
+                wednesday: "Provides 11:15 am lunch and 6 pm meal for seniors 55 and older.",
+                thursday: "Provides 11:15 am lunch and 6 pm meal for seniors 55 and older.",
+                friday: "Provides 11:15 am lunch and 6 pm meal for seniors 55 and older.",
+                saturday: "Provides 11:15 am lunch and 6 pm meal for seniors 55 and older.",
+                sunday: "Provides 11:15 am lunch and 6 pm meal for seniors 55 and older.")
+
 Location.create(name: "Basilica of the Immaculate Conception", address: "1530 Logan St, Denver, CO",
-description: "Provides sandwiches at 8 am Monday through Friday.")
+                monday: "Provides sandwiches at 8 am",
+                tuesday: "Provides sandwiches at 8 am",
+                wednesday: "Provides sandwiches at 8 am",
+                thursday: "Provides sandwiches at 8 am",
+                friday: "Provides sandwiches at 8 am")
+
 Location.create(name: "St. Paul's United Methodist Church", address: "1615 Ogden St, Denver, CO",
-description: "Serves breakfast from 8 - 9 am on Sundays.")
+                sunday: "Breakfast 8-9 am")
+
 Location.create(name: "Denver Rescue Mission", address: "1130 Park Ave W, Denver, CO 80205",
-                description: "5:30 am breakfast, 12–12:30 pm lunch and 8 pm dinner every day of the week.")
+                monday: "5:30 am breakfast, 12–12:30 pm lunch and 8 pm dinner",
+                tuesday: "5:30 am breakfast, 12–12:30 pm lunch and 8 pm dinner",
+                wednesday: "5:30 am breakfast, 12–12:30 pm lunch and 8 pm dinner",
+                thursday: "5:30 am breakfast, 12–12:30 pm lunch and 8 pm dinner",
+                friday: "5:30 am breakfast, 12–12:30 pm lunch and 8 pm dinner",
+                saturday: "5:30 am breakfast, 12–12:30 pm lunch and 8 pm dinner",
+                sunday: "5:30 am breakfast, 12–12:30 pm lunch and 8 pm dinner")
