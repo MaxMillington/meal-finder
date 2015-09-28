@@ -13,6 +13,8 @@ gem 'will_paginate', '~> 3.0.5'
 gem 'bootstrap-will_paginate', '~> 0.0.10'
 gem 'font-awesome-rails'
 gem 'twilio-ruby'
+gem 'rufus-scheduler'
+gem 'whenever', :require => false
 
 
 gem 'jquery-rails'
