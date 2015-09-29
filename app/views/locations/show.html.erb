@@ -15,12 +15,18 @@
       <div id="location-description" class="col-md-4 well">
         <h1><%= @location.name %></h1>
         <p><%= @location.description %>
-        </p><br><br>
+        </p><br>
         <h3>Contact</h3>
         <p><%= @location.address %></p>
         <p><%= @location.phone_number %></p>
         <br>
-        <br>
+        <p><strong>Monday:</strong> <%= @location.monday %></p>
+        <p><strong>Tuesday:</strong> <%= @location.tuesday %></p>
+        <p><strong>Wednesday:</strong> <%= @location.wednesday %></p>
+        <p><strong>Thursday:</strong> <%= @location.thursday %></p>
+        <p><strong>Friday:</strong> <%= @location.friday %></p>
+        <p><strong>Saturday:</strong> <%= @location.saturday %></p>
+        <p><strong>Sunday:</strong> <%= @location.sunday %></p>
         <a class="btn btn-primary btn-lg" href="<%= locations_path %>">Back to All Locations</a>
 
       </div>
