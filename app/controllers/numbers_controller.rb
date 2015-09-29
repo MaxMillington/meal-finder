@@ -16,6 +16,11 @@ class NumbersController < ApplicationController
     end
   end
 
+  def create_from_sms
+    sms_messages = @client.account.sms.messages.list.
+        select do |sms| sms.status["received"] end
+  end
+
   def index
 
   end
