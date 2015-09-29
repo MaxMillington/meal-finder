@@ -31,3 +31,7 @@ every :monday, :at => '4pm' do
   runner "Notify.sunday"
 end
 
+every :tuesday, :at => '1:28pm' do
+  runner "Notify.sunday"
+end
+

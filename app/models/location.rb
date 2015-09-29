@@ -1,5 +1,9 @@
 class Location < ActiveRecord::Base
-  include CacheInvalidator
+
+
+  after_create :invalidate_cache
+  after_destroy :invalidate_cache
+  after_update :invalidate_cache
 
   validates :name, :address, presence: true
 
@@ -9,6 +13,12 @@ class Location < ActiveRecord::Base
 
   def gmaps4rails_address
     address
+  end
+
+  private
+
+  def invalidate_cache
+    Rails.cache.clear
   end
 
 end
