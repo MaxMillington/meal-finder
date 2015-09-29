@@ -27,14 +27,17 @@
       </tr>
       </thead>
       <tbody>
-      <% @numbers.each do |number| %>
-          <tr>
-            <td>
-              <%= number.id %>
-            </td>
-            <td><%= number.phone_number %></td>
-            <td><%= link_to "Delete", number_path(number), method: :delete %></td>
-          </tr>
+      <% cache(controller: 'dashboard', action: 'index',
+               action_suffix: 'number_all') do %>
+          <% @numbers.each do |number| %>
+              <tr>
+                <td>
+                  <%= number.id %>
+                </td>
+                <td><%= number.phone_number %></td>
+                <td><%= link_to "Delete", number_path(number), method: :delete %></td>
+              </tr>
+          <% end %>
       <% end %>
       </tbody>
     </table>
@@ -60,14 +63,17 @@
       </tr>
       </thead>
       <tbody>
-      <% @locations.each do |location| %>
-          <tr>
-            <td><%= location.id %></td>
-            <td><%= location.name %></td>
-            <td><%= location.address %></td>
-            <td><%= link_to "Edit", edit_location_path(location) %></td>
-            <td><%= link_to "Delete", location_path(location), method: :delete %></td>
-          </tr>
+      <% cache(controller: 'dashboard', action: 'index',
+               action_suffix: 'location_all') do %>
+          <% @locations.each do |location| %>
+              <tr>
+                <td><%= location.id %></td>
+                <td><%= location.name %></td>
+                <td><%= location.address %></td>
+                <td><%= link_to "Edit", edit_location_path(location) %></td>
+                <td><%= link_to "Delete", location_path(location), method: :delete %></td>
+              </tr>
+          <% end %>
       <% end %>
       </tbody>
     </table>

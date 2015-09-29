@@ -1,4 +1,5 @@
 class Location < ActiveRecord::Base
+  include CacheInvalidator
 
   validates :name, :address, presence: true
 
