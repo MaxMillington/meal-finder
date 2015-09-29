@@ -109,3 +109,8 @@ section {
     height: 505px;
     margin-bottom: 40px;
 }
+
+#each-location {
+    height: 200px;
+    margin-bottom: 10px;
+}

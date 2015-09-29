@@ -40,7 +40,7 @@
     <!-- Content Row -->
     <div class="row well">
       <% @locations.each do |location| %>
-          <div class="col-md-4">
+          <div id="each-location" class="col-md-4">
             <h2><%= location.name %></h2>
             <p><%= location.address %></p>
             <a class="btn btn-default" href="<%= location_path(location) %>">More Info</a>
