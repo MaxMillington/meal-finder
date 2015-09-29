@@ -32,7 +32,7 @@
                 <td>
                   <%= number.id %>
                 </td>
-                <td><%= number.phone_number %></td>
+                <td><%= number_to_phone(number.phone_number.delete '-, +')[1..-1] %></td>
                 <td><%= link_to "Delete", number_path(number), method: :delete %></td>
               </tr>
           <% end %>

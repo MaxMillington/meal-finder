@@ -12,7 +12,7 @@ class Notify
 
     @numbers.each do |number|
       client.messages.create(from: "15702854146",
-                             to: "1#{number.phone_number.delete '-'}",
+                             to: "#{number.phone_number.delete '-, +'}",
                              body: "#{message.join(', ')}")
     end
   end
@@ -29,7 +29,7 @@ class Notify
 
     @numbers.each do |number|
       client.messages.create(from: "15702854146",
-                             to: "1#{number.phone_number.delete '-'}",
+                             to: "#{number.phone_number.delete '-, +'}",
                              body: "#{message.join(', ')}")
     end
 
@@ -48,7 +48,7 @@ class Notify
 
     @numbers.each do |number|
       client.messages.create(from: "15702854146",
-                             to: "1#{number.phone_number.delete '-'}",
+                             to: "#{number.phone_number.delete '-, +'}",
                              body: "#{message.join(', ')}")
     end
   end
@@ -65,7 +65,7 @@ class Notify
 
     @numbers.each do |number|
       client.messages.create(from: "15702854146",
-                             to: "1#{number.phone_number.delete '-'}",
+                             to: "#{number.phone_number.delete '-, +'}",
                              body: "#{message.join(', ')}")
       end
   end
@@ -82,7 +82,7 @@ class Notify
 
     @numbers.each do |number|
       client.messages.create(from: "15702854146",
-                             to: "1#{number.phone_number.delete '-'}",
+                             to: "#{number.phone_number.delete '-, +'}",
                              body: "#{message.join(', ')}")
     end
   end
@@ -99,7 +99,7 @@ class Notify
 
     @numbers.each do |number|
       client.messages.create(from: "15702854146",
-                             to: "1#{number.phone_number.delete '-'}",
+                             to: "#{number.phone_number.delete '-, +'}",
                              body: "#{message.join(', ')}")
     end
   end
@@ -116,9 +116,13 @@ class Notify
 
     @numbers.each do |number|
       client.messages.create(from: "15702854146",
-                             to: "1#{number.phone_number.delete '-'}",
+                             to: "#{number.phone_number.delete '-, +'}",
                              body: "#{message.join(', ')}")
     end
   end
+
+  private
+
+
 end
 

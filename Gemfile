@@ -14,6 +14,7 @@ gem 'bootstrap-will_paginate', '~> 0.0.10'
 gem 'font-awesome-rails'
 gem 'twilio-ruby'
 gem 'whenever', :require => false
+gem 'phony_rails'
 
 
 gem 'jquery-rails'
