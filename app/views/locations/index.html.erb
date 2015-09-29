@@ -39,15 +39,12 @@
 
     <!-- Content Row -->
     <div class="row well">
-      <% cache(controller: 'locations', action: 'index',
-               action_suffix: 'location_all') do %>
-          <% @locations.each do |location| %>
-              <div class="col-md-4">
-                <h2><%= location.name %></h2>
-                <p><%= location.address %></p>
-                <a class="btn btn-default" href="<%= location_path(location) %>">More Info</a>
-              </div>
-          <% end %>
+      <% @locations.each do |location| %>
+          <div class="col-md-4">
+            <h2><%= location.name %></h2>
+            <p><%= location.address %></p>
+            <a class="btn btn-default" href="<%= location_path(location) %>">More Info</a>
+          </div>
       <% end %>
     </div>
 

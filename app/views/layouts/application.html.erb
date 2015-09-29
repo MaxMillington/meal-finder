@@ -11,9 +11,8 @@
 </head>
 <body>
 <%= render partial: "layouts/navigation" %>
-<%= render "layouts/notice" %>
+<%= render partial: "layouts/notice" %>
 <%= yield %>
 <%= yield :scripts %>
-
 </body>
 </html>

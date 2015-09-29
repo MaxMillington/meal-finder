@@ -55,7 +55,7 @@ class LocationsController < ApplicationController
                           email:  params[:location][:email],
                           description: params[:location][:description])
         redirect_to admin_dashboard_path
-        flash[:notice] = "Location updated!"
+        flash[:success] = "Location updated!"
       else
         flash[:error] = "Invalid input - Please try updating trip again"
         render :edit
