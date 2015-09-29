@@ -5,7 +5,7 @@ class Notify
     client = Twilio::REST::Client.new(ENV["twilio_account_sid"],
                                       ENV["twilio_auth_token"])
     @locations = Location.all
-    
+
     if Time.now.monday?
       message = @locations.map do |location|
         "#{location.name}: #{location.monday}" unless location.monday.nil?
