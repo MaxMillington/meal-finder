@@ -98,7 +98,7 @@ describe 'user can navigate the website' do
       fill_in "Address", with: "1510 Blake Street, Denver, CO"
 
       click_link_or_button "Create Location"
-      
+
       expect(current_path).to eq('/admin/dashboard')
 
       click_link_or_button "Edit"
