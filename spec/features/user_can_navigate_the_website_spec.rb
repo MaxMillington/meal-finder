@@ -45,13 +45,13 @@ describe 'user can navigate the website' do
 
       expect(current_path).to eq('/')
 
-      # click_link_or_button("View Meal Locations")
-      #
-      # expect(current_path).to eq('/locations')
-      #
-      # click_link_or_button("More Info")
-      #
-      # expect(page).to have_content("Christ Body Ministries")
+      click_link_or_button("View Meal Locations")
+
+      expect(current_path).to eq('/locations')
+
+      click_link_or_button("More Info")
+
+      expect(page).to have_content("Christ Body Ministries")
 
     end
   end
