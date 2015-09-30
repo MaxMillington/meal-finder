@@ -364,39 +364,6 @@
         1,
         null
       ],
-      "/Users/maryrose/module_3_projects/meal_finder/spec/models/location_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/Users/maryrose/module_3_projects/meal_finder/app/models/location.rb": [
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        3,
-        null,
-        null,
-        1,
-        null,
-        1,
-        3,
-        null,
-        null,
-        null
-      ],
       "/Users/maryrose/module_3_projects/meal_finder/spec/models/number_spec.rb": [
         1,
         null,
@@ -458,6 +425,32 @@
         0,
         0,
         0,
+        null,
+        null,
+        1,
+        null,
+        1,
+        3,
+        null,
+        null,
+        null
+      ],
+      "/Users/maryrose/module_3_projects/meal_finder/app/models/location.rb": [
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        3,
         null,
         null,
         1,
@@ -662,6 +655,6 @@
         null
       ]
     },
-    "timestamp": 1443632476
+    "timestamp": 1443632556
   }
 }
