@@ -87,14 +87,57 @@ describe 'user can navigate the website' do
 
       expect(current_path).to eq('/locations/new')
 
-      fill_in "Name", with: "Steve"
+      fill_in "Name", with: ""
       fill_in "Address", with: "1510 Blake Street, Denver, CO"
 
       click_link_or_button "Create Location"
 
+      expect(current_path).to eq('/locations')
+
+      fill_in "Name", with: "Steve"
+      fill_in "Address", with: "1510 Blake Street, Denver, CO"
+
+      click_link_or_button "Create Location"
+      
+      expect(current_path).to eq('/admin/dashboard')
+
+      click_link_or_button "Edit"
+
+      click_link_or_button "Update Location"
+
+      expect(current_path).to eq('/admin/dashboard')
+
+      click_link_or_button "Delete"
+
       expect(current_path).to eq('/admin/dashboard')
 
       click_link_or_button "Admin Dashboard"
+
+      click_link_or_button "Logout"
+
+    end
+
+    it "lets the admin delete numbers" do
+
+      User.create(username: "Max Millington", email: "MaxMillington89@gmail.com", password: "password")
+
+      Number.create(phone_number: "555-555-5555")
+
+      visit '/'
+
+      click_link_or_button("Admin Dashboard")
+
+      fill_in "Username", with: "Max Millington"
+      fill_in "Email", with: "MaxMillington89@gmail.com"
+      fill_in "Password", with: "password"
+
+      click_link_or_button "Login"
+
+      expect(current_path).to eq('/admin/dashboard')
+
+      click_link_or_button "Delete"
+
+      expect(current_path).to eq('/admin/dashboard')
 
       click_link_or_button "Logout"
 
