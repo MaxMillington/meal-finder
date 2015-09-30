@@ -32,12 +32,6 @@ gem 'geocoder'
 
 group :development, :test do
   gem 'pry'
-  gem 'capybara'
-  gem 'vcr'
-  gem 'simplecov', :require => false
-  gem 'rspec-rails'
-  gem 'database_cleaner'
-  gem 'launchy'
 end
 
 group :development do
@@ -51,6 +45,12 @@ group :production do
 end
 
 group :test do
-  gem 'webmock'
+  gem 'capybara'
+  gem 'simplecov', :require => false
+  gem 'rspec-rails'
+  gem 'database_cleaner'
+  gem 'launchy'
+  # gem 'vcr'
+  # gem 'webmock'
 end
 

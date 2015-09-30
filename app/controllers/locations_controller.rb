@@ -23,7 +23,7 @@ class LocationsController < ApplicationController
     @location = Location.new(location_params)
     if @location.save
       flash[:success] = "Location created."
-      redirect_to locations_path
+      redirect_to admin_dashboard_path
     else
       flash.now[:warning] = @location.errors.full_messages.join(". ")
       render :new
