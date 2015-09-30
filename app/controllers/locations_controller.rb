@@ -1,12 +1,10 @@
 class LocationsController < ApplicationController
   def index
-    def index
-      @locations = Location.all
-      @json = @locations.to_gmaps4rails do |location, marker|
-        marker.infowindow render_to_string(:partial => "/locations/infowindow", :locals => { :location => location})
-        marker.title "#{location.name}"
-        marker.json({ :address => location.address})
-      end
+    @locations = Location.all
+    @json = @locations.to_gmaps4rails do |location, marker|
+      marker.infowindow render_to_string(:partial => "/locations/infowindow", :locals => { :location => location})
+      marker.title "#{location.name}"
+      marker.json({ :address => location.address})
     end
   end
 
