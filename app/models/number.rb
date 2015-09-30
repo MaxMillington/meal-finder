@@ -13,8 +13,8 @@ class Number < ActiveRecord::Base
                                        ENV["twilio_auth_token"])
     sms_messages = @client.account.sms.messages.list.
         select do |sms|
-      sms.status["received"] end
-
+      sms.status["received"]
+    end
 
     sms_messages.map do |sms|
       sms.from
@@ -25,6 +25,22 @@ class Number < ActiveRecord::Base
     get_sms_messages.each do |sms|
       Number.create(phone_number: sms[2..-1])
     end unless get_sms_messages.nil?
+  end
+
+  def self.valid?(phone_number)
+    lookup_client = Twilio::REST::LookupsClient.new(ENV["twilio_account_sid"],
+                                                    ENV["twilio_auth_token"])
+    begin
+      response = lookup_client.phone_numbers.get(phone_number)
+      response.phone_number #if invalid, throws an exception. If valid, no problems.
+      return true
+    rescue => e
+      if e.code == 20404
+        return false
+      else
+        raise e
+      end
+    end
   end
 
   private

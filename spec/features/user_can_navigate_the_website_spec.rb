@@ -3,10 +3,7 @@ require_relative "../rails_helper"
 describe 'user can navigate the website' do
   context 'regular user' do
 
-
     it "won't break when I click all the buttons" do
-
-      # response = stub_request(:get, "http://maps.googleapis.com/maps/api/geocode/json?address=850%20Lincoln%20Street%20Denver,%20CO%2080203&language=en&sensor=false")
 
       location = Location.create(name: "Christ Body Ministries",
       address: "850 Lincoln Street Denver, CO 80203")
@@ -57,7 +54,6 @@ describe 'user can navigate the website' do
   end
 
   context 'admin person' do
-
 
     it "lets the admin do admin things" do
 

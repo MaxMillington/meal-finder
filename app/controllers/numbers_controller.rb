@@ -6,13 +6,17 @@ class NumbersController < ApplicationController
 
   def create
     @number = Number.new(number_params)
-
-    if @number.save
-      flash[:success] = "Your phone number has been registered."
-      redirect_to root_path
+    if Number.valid?(@number.phone_number.delete '-, +')
+      if @number.save
+        flash[:success] = "Your phone number has been registered."
+        redirect_to root_path
+      else
+        flash.now[:warning] = @number.errors.full_messages.join(". ")
+        render :new
+      end
     else
-      flash.now[:warning] = @number.errors.full_messages.join(". ")
-      render :new
+      redirect_to root_path
+      flash.now[:notice] = "That number is not a valid number"
     end
   end
 
