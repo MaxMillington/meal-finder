@@ -15,8 +15,8 @@ class NumbersController < ApplicationController
         render :new
       end
     else
+      flash.now[:warning] = "That number is not a valid number"
       redirect_to root_path
-      flash.now[:notice] = "That number is not a valid number"
     end
   end
 
