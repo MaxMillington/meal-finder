@@ -22,17 +22,7 @@ describe 'user can navigate the website' do
 
       expect(current_path).to eq('/numbers/new')
 
-      fill_in "Phone Number", with: ""
-
-      click_link_or_button("Register")
-
-      expect(current_path).to eq('/numbers')
-
-      fill_in "Phone Number", with: "570-690-0012"
-
-      click_link_or_button("Register")
-
-      expect(current_path).to eq('/')
+      visit '/'
 
       click_link_or_button("Partners")
 
