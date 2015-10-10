@@ -106,7 +106,7 @@ section {
 }
 
 #location-description {
-    height: 505px;
+    height: auto;
     margin-bottom: 40px;
 }
 
